@@ -16,9 +16,6 @@ connectDB();
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
-
-
-
 // API Routes (Add your API routes here)
 app.get('/api/hello', (req, res) => {
   res.send('Hello from backend!');
