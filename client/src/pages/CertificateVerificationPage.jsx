@@ -17,7 +17,7 @@ const CertificateVerificationPage = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:10000/api/users/verify/${certificateCode}`, {
+      const response = await fetch(`/api/users/verify/${certificateCode}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -54,14 +54,14 @@ const CertificateVerificationPage = () => {
     <div className="bg-white py-10 px-5 md:px-20">
       <div className="container mx-auto">
         <header className="flex justify-between items-center">
-          <div className="text-green-600 font-bold text-3xl">Green Earth Mission</div>
+          <div className="text-green-600 font-bold text-3xl">Grow With Us</div>
         </header>
 
         <section className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="space-y-6">
             <h1 className="text-3xl font-bold text-green-800">Certificate Verification</h1>
             <p className="text-lg text-gray-600">
-              Verify the authenticity of certificates issued by Green Earth Mission
+              Verify the authenticity of certificates issued by Grow With Us
             </p>
 
             <div className="space-y-3">
@@ -76,7 +76,7 @@ const CertificateVerificationPage = () => {
             <div className="space-y-3">
               <h2 className="font-semibold text-lg">About Our Certificates</h2>
               <p className="text-gray-600">
-                All certificates issued by Green Earth Mission contain a unique Certificate Code that can be verified through this portal.
+                All certificates issued by Grow With Us contain a unique Certificate Code that can be verified through this portal.
                 This ensures the authenticity of participation in our tree plantation campaigns.
               </p>
             </div>

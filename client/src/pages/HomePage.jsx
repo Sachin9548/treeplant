@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link as ScrollLink } from "react-scroll"; // Import Link from react-scroll for smooth scrolling
 import { Link } from "react-router-dom"; // Import Link from react-router-dom for Login and Verify Certificate
-
 import heroBg from '../assets/b1.jpg';
 import aboutImg from '../assets/impact.jpg';
 import Navbar from '../components/Navbar';
@@ -173,7 +172,7 @@ export default function HomePage() {
       <footer className="bg-gray-900 text-gray-100 py-10 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
           <div>
-            <h3 className="text-yellow-400 font-bold text-lg mb-2">Green Earth Mission</h3>
+            <h3 className="text-yellow-400 font-bold text-lg mb-2">Grow With Us</h3>
             <p className="text-sm">Empowering communities through sustainable action.</p>
           </div>
          <div>
@@ -205,11 +204,11 @@ export default function HomePage() {
           <div>
             <h4 className="text-yellow-400 font-bold mb-2">Contact Us</h4>
             <p className="text-sm">📍 India</p>
-            <p className="text-sm">✉️ info@greenindiamission.org</p>
+            <p className="text-sm">✉️ info@growwithus.online</p>
           </div>
         </div>
         <div className="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-4">
-          &copy; {new Date().getFullYear()} Green Earth Mission. All rights reserved.
+          &copy; {new Date().getFullYear()} Grow With Us. All rights reserved.
         </div>
       </footer>
     </div>

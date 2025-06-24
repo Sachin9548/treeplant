@@ -18,22 +18,22 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
+
 // API Routes (Add your API routes here)
 app.get('/api/hello', (req, res) => {
   res.send('Hello from backend!');
 });
 
-if (false) {
+if (true) {
   app.use(express.static(path.join(__dirname, './client/dist')));
-
-  app.get('*', (req, res) => {
+  app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './client/dist', 'index.html'));
   });
 }
 
-
 // Routes
 app.use('/api/users', userRoutes);
+
 
 // Start the Server
 const PORT = process.env.PORT || 5000;

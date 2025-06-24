@@ -36,7 +36,7 @@ const handleSubmit = async (e) => {
 
     // Sending data to backend
     try {
-      const response = await fetch('http://localhost:10000/api/users/join', {
+      const response = await fetch('/api/users/join', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

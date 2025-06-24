@@ -10,7 +10,7 @@ const DashboardPage = () => {
   const uniqueId = localStorage.getItem('uniqueId');
 
   useEffect(() => {
-    fetch(`http://localhost:10000/api/users/dashboard/${uniqueId}`)
+    fetch(`/api/users/dashboard/${uniqueId}`)
       .then((res) => res.json())
       .then((data) => {
         setWorkImages(data.workImages);
@@ -31,7 +31,7 @@ const DashboardPage = () => {
     setSuccess('');
     setLoadingImages(true);
 
-    fetch(`http://localhost:10000/api/users/upload-work-images/${uniqueId}`, {
+    fetch(`/api/users/upload-work-images/${uniqueId}`, {
       method: 'PUT',
       body: formData,
     })
@@ -62,7 +62,7 @@ const DashboardPage = () => {
     setSuccess('');
     setLoadingPayment(true);
 
-    fetch(`http://localhost:10000/api/users/upload-payment-screenshot/${uniqueId}`, {
+    fetch(`/api/users/upload-payment-screenshot/${uniqueId}`, {
       method: 'PUT',
       body: formData,
     })
@@ -117,7 +117,7 @@ const DashboardPage = () => {
         {/* Payment Details */}
         <div className="mb-8 bg-white p-6 rounded shadow">
           <h3 className="text-2xl font-bold text-green-600 mb-4">Payment Details</h3>
-          <p className="text-lg mb-2">Please pay ₹10 to receive your official certificate.</p>
+          <p className="text-lg mb-2">Please pay ₹300 to receive your official certificate.</p>
           <p className="text-sm">Account Number: 1234567890</p>
           <p className="text-sm">IFSC Code: ABCD0123456</p>
         </div>

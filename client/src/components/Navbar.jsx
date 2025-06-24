@@ -19,7 +19,7 @@ export default function Navbar() {
           duration={500}
           className="text-green-700 text-2xl font-bold cursor-pointer"
         >
-          Green Earth Mission
+          Grow With Us
         </ScrollLink>
 
         {/* Desktop Menu */}
